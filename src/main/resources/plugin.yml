@@ -1,0 +1,20 @@
+name: TravellingPlots
+version: ${project.version}
+main: com.blutkrone.travellingplots.TravellingPlots
+authors: [Blutkrone]
+description: Travelling Plots
+api-version: 1.13
+
+commands:
+  # Pick two chunks which will be used as the corners of the plot to
+  #  be created (a perfect rectangle is recommended to avoid incorrect
+  #  setup of plots.)
+  # Right click after having selected two corners on a sign, this will
+  #  write the correct sign and spare you of the trouble of creating
+  #  them manually.
+  # Keep the cornerstone sign outside of the plot so it cannot be covered
+  #  up or broken.
+  tplot:
+     description: Administrative tools for TravellingPlots
+     permission: travellingplots.admin
+     usage: /tplot help

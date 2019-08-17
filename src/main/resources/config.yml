@@ -1,0 +1,41 @@
+#Permissions:
+# 'tplot.admin': Breaking & Creating new plots and their cornerstones and interact/build on every plot
+# 'tplot.use.??': Allows to right-click on a cornerstone to summon the plot (per-world)
+# 'tplot.freebuild': Allows you to build in a world which contains plots.
+
+# build limit relative to cornerstone
+build-height-up: 30
+# build limit relative to cornerstone
+build-height-down: 30
+# cooldown in seconds
+default-reuse-cooldown: 603
+# Reduces the cooldown by the total sum of permissions you have.
+cooldown-reduction-permissions:
+  tplot vip1: 60
+  tplot vip2: 120
+  tplot vip3: 180
+  tplot vip4: 240
+# Grants immunity to damage types by the total sum of permissions you have.
+immunity-by-permission:
+  tplot vip1:
+  - FALL_DAMAGE
+  - CONTACT
+  - THORNS
+  - FLY_INTO_WALL
+  tplot vip2:
+  - FIRE
+  - MELTING
+  - LAVA
+  - FIRE_TICK
+  - HOT_FLOOR
+  tplot vip3:
+  - WITHER
+  - POISON
+  tplot vip4:
+  - ENTITY_ATTACK
+  - ENTITY_SWEEP_ATTACK
+  - PROJECTILE
+# Prevents any PVP interactions on plots
+allow-pvp-on-plot: false
+# Mobs won't spawn on your plots
+allow-spawn-on-plot: false
